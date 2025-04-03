@@ -1,0 +1,257 @@
+/* ChainadamyLanding.css */
+
+:root {
+  /* Light mode variables */
+  --primary: #f9b11c;
+  --secondary: #1f2937;
+  --accent: #4f46e5;
+  --bg-main: linear-gradient(135deg, #f0f4ff 0%, #e6f0ff 100%);
+  --bg-card: #ffffff;
+  --bg-section: #f3f4f6;
+  --text-title: #1f2937;
+  --text-body: #4b5563;
+  --text-muted: #6b7280;
+  --border-color: rgba(229, 231, 235, 0.5);
+  --nav-bg: #ffffff;
+  --nav-text: #4b5563;
+  --nav-text-hover: #1f2937;
+  --search-bg: #ffffff;
+  --search-input-bg: #ffffff;
+  --search-button-bg: #f3f4f6;
+  --search-button-hover: #e5e7eb;
+  --search-text: #4b5563;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --footer-bg: #1f2937;
+  --footer-text: #ffffff;
+  --footer-text-muted: #9ca3af;
+  --cta-bg: #4f46e5;
+  --cta-text: #ffffff;
+}
+
+.dark-mode {
+  /* Dark mode variables */
+  --bg-main: linear-gradient(135deg, #111827 0%, #1e293b 100%);
+  --bg-card: #1f2937;
+  --bg-section: #111827;
+  --text-title: #f1f5f9;
+  --text-body: #d1d5db;
+  --text-muted: #9ca3af;
+  --border-color: rgba(55, 65, 81, 0.5);
+  --nav-bg: #111827;
+  --nav-text: #d1d5db;
+  --nav-text-hover: #f1f5f9;
+  --search-bg: #1f2937;
+  --search-input-bg: #374151;
+  --search-button-bg: #374151;
+  --search-button-hover: #4b5563;
+  --search-text: #d1d5db;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --footer-bg: #111827;
+  --footer-text: #f1f5f9;
+  --footer-text-muted: #9ca3af;
+  --cta-bg: #4338ca;
+  --cta-text: #ffffff;
+}
+
+/* Default light mode */
+.light-mode {
+  background: var(--bg-main);
+  color: var(--text-body);
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Navigation */
+.nav-container {
+  background-color: var(--nav-bg);
+}
+
+.brand-text {
+  color: var(--text-title);
+}
+
+.nav-link {
+  color: var(--nav-text);
+}
+
+.nav-link:hover {
+  color: var(--nav-text-hover);
+}
+
+/* Theme toggle button */
+.theme-toggle-btn {
+  color: var(--text-body);
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+}
+
+.theme-toggle-btn:hover {
+  background-color: var(--border-color);
+}
+
+/* Search bar */
+.search-container {
+  background-color: var(--search-bg);
+}
+
+.search-input {
+  background-color: var(--search-input-bg);
+  color: var(--search-text);
+}
+
+.search-button {
+  background-color: var(--search-button-bg);
+}
+
+.search-button:hover {
+  background-color: var(--search-button-hover);
+}
+
+.search-icon {
+  color: var(--text-muted);
+}
+
+/* Cards */
+.card-bg {
+  background-color: var(--bg-card);
+}
+
+.card-title {
+  color: var(--text-title);
+}
+
+.card-text {
+  color: var(--text-body);
+}
+
+.card-text-muted {
+  color: var(--text-muted);
+}
+
+.accent-text {
+  color: var(--accent);
+}
+
+.step-number-container {
+  background-color: var(--bg-card);
+}
+
+.border-divider {
+  border-color: var(--border-color);
+}
+
+/* Sections */
+.section-bg {
+  background-color: var(--bg-section);
+}
+
+/* Hexagon shape */
+.hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hexagon:hover {
+  transform: scale(1.05);
+}
+
+/* Feature cards */
+.feature-card {
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px var(--shadow-color);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(249, 177, 28, 0.3);
+}
+
+.btn-secondary {
+  background-color: var(--accent);
+  color: white;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: var(--cta-bg);
+  color: var(--cta-text);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+}
+
+.footer-text-muted {
+  color: var(--footer-text-muted);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .feature-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .hexagon.w-64.h-64 {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Custom focus states */
+input:focus, button:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 1px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Transition for dark/light mode toggle */
+.dark-mode, .light-mode, 
+.card-bg, .nav-container, .search-container, .search-input,
+.card-title, .card-text, .card-text-muted, .nav-link,
+.step-number-container, .search-button, .accent-text {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
