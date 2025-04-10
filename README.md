@@ -4,7 +4,7 @@
 
 ## Overview
 
-**Chainademy** is a cutting-edge decentralized platform orchestrating blockchain-powered **EDUFi** agents and tools to transform how students and institutions manage education finance. From scholarships to tuition payments, loan optimization to credential verification — Chainademy is your one-stop hub built on the EDU Chain.
+**Chainademy** Chainademy is **EDUFi** orchestrate AI-powered agents to transform how students and institutions manage education finance. From scholarships to tuition payments, loan optimization to credential verification — Chainademy is your one-stop hub built on the EDU Chain.
 
 ---
 
